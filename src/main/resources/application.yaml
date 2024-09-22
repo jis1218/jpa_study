@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: jpa_study
+
+  datasource:
+    url: jdbc:mysql://localhost:3309/insup?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul
+    username: root
+    password: amadeus21!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+#        hbm2ddl:
+#          auto: create
+        format_sql: true
+        show_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
